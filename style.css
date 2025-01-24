@@ -15,6 +15,19 @@ body {
 .bg-black{
     background-color: #000;
 }
+.logo{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.logo-text {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 21px;
+}
 .nav-item{
     margin-right: 5px;
 }
