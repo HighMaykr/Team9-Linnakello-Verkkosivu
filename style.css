@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+Georgian:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Noto Serif Georgian", serif;
+}
+
+.bg-dark-gray {
+    background-color: #141415;
+}
+.nav-item{
+    margin-right: 5px;
+}
+.nav-item:hover {
+    outline: 1px solid white;
+    cursor: pointer;
+}
+.nav-active{
+    outline: 1px solid #7a7a7a;
+    border-radius: 0 !important;
+}
