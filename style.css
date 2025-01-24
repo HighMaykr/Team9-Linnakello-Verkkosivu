@@ -5,6 +5,7 @@ body {
     display: grid;
     grid-template-rows: max-content 1fr max-content;
     height: 100vh;
+    background: #000;
 }
 
 .bg-dark-gray {
@@ -24,4 +25,50 @@ body {
 .nav-active{
     outline: 1px solid #7a7a7a;
     border-radius: 0 !important;
+}
+.products-title{
+    font-size: 24px;
+}
+.products-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+.card {
+    background: transparent;
+    border: 1px solid #7a7a7a;
+    color: white;
+    border-radius: 0;
+}
+.card-btn{
+    color: white;
+    border: 1px solid #7a7a7a;
+    border-radius: 0;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+.card-btn:hover{
+    background-color: white;
+    color: black;
+}
+.card-image img {
+    width: 100%;
+    padding: 20px;
+    object-fit: cover;
+    max-height: 400px;
+    height: 250px;
+}
+.card-image {
+    position: relative;
+}
+
+.card-price {
+    position: absolute;
+    bottom: 35px;
+    right: 45px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.card-body {
+    padding: 0 20px 20px 20px;
 }
