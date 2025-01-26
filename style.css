@@ -108,3 +108,34 @@ body {
   align-items: end;
   position: relative;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.links{
+  display: flex;
+  flex-direction: column;
+}
+.links a {
+  color: white;
+  text-decoration: none;
+}
+.copy {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.copy img{
+  width: 100px;
+  height: 100px;
+}
+.social-links a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.trademark {
+  display: flex;
+  justify-content: flex-end;
+}
