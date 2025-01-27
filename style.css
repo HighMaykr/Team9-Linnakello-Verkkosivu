@@ -153,3 +153,20 @@ body {
   height: 100%;
 }
 
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 100px;
+  color: white;
+}
+.about-description {
+  padding: 40px 20px;
+  font-size: 19px;
+}
+#language-switch {
+  position: absolute;
+  right: 12px;
+  top: 0;
+  width: 60px;
+  cursor: pointer;
+}
