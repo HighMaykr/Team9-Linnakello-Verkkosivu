@@ -13,22 +13,40 @@
 <body>
 
 <header class="bg-dark-gray">
-  <div class="container d-flex flex-wrap justify-content-center py-3">
-    <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <img class="logo" src="./assets/logo.png" alt="logo">
-      <div class="logo-text">
-        <span class="fs-4 text-white">Linnakello</span>
-        <span class="fs-6 text-white">Hämeenlinna</span>
+  <nav class="navbar navbar-expand-lg py-3">
+    <div class="container">
+      <a href="./index.html" class="navbar-brand d-flex align-items-center link-body-emphasis text-decoration-none">
+        <img class="logo" src="./assets/logo.png" alt="logo">
+        <div class="logo-text">
+          <span class="fs-4 text-white">Linnakello</span>
+          <span class="fs-6 text-white">Hämeenlinna</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler custom-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+              aria-controls="mainNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a href="./index.html" class="nav-link text-white">Etusivu</a></li>
+          <li class="nav-item"><a href="./meista.html" class="nav-link text-white">Tietoa meistä</a></li>
+          <li class="nav-item"><a href="./kauppa.html" class="nav-link text-white">Kauppa</a></li>
+          <li class="nav-item"><a href="./yhteystiedot.html" class="nav-link text-white nav-active" aria-current="page">Yhteystiedot</a></li>
+          <li class="nav-item"><a href="./palvelut.html" class="nav-link text-white">Palvelut</a></li>
+        </ul>
       </div>
-    </a>
-    <ul class="nav nav-pills">
-      <li class="nav-item"><a href="./index.html" class="nav-link text-white">Etusivu</a></li>
-      <li class="nav-item"><a href="./meista.html" class="nav-link text-white">Tietoa meistä</a></li>
-      <li class="nav-item"><a href="./kauppa.html" class="nav-link text-white">Kauppa</a></li>
-      <li class="nav-item"><a href="./yhteystiedot.html" class="nav-link text-white nav-active" aria-current="page">Yhteystiedot</a></li>
-      <li class="nav-item"><a href="./palvelut.html" class="nav-link text-white ">Palvelut</a></li>
-    </ul>
-  </div>
+    </div>
+  </nav>
 </header>
 
 
@@ -65,33 +83,43 @@
   </div>
 </section>
 
-<footer class=" bg-dark-gray py-3">
-  <div class="container footer">
-    <div class="links">
-      <span><a href="#">Usein kysytyt kysymykset</a></span>
-      <span><a href="#">Vaihto ja palautus</a></span>
-      <span><a href="#">Takuu ja huolto</a></span>
-      <span><a href="#">Myymälämme</a></span>
-      <span><a href="#">Maksutavat</a></span>
-    </div>
-    <div class="copy">
-      <span>&copy; 2025</span>
-      <span>Linnakello Hämeenlinna</span>
-      <img src="./assets/logo.png" alt="logo">
-    </div>
-    <div class="social">
-      <div class="social-links">
-        <a href="#"><img src="./assets/x.png" alt="twitter"></a>
-        <a href="#"><img src="./assets/facebook.png" alt="facebook"></a>
-        <a href="#"><img src="./assets/instagram.png" alt="instagram"></a>
-      </div>
-      <div class="trademark">
-        <img src="./assets/Suomalainenkauppa.png" alt="trademark">
+<footer class="bg-dark-gray py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 mb-4">
+        <div class="links d-flex flex-column align-items-center align-items-lg-start">
+          <span><a href="#" class="text-white text-decoration-none">Usein kysytyt kysymykset</a></span>
+          <span><a href="#" class="text-white text-decoration-none">Vaihto ja palautus</a></span>
+          <span><a href="#" class="text-white text-decoration-none">Takuu ja huolto</a></span>
+          <span><a href="#" class="text-white text-decoration-none">Myymälämme</a></span>
+          <span><a href="#" class="text-white text-decoration-none">Maksutavat</a></span>
+        </div>
       </div>
 
+      <div class="col-12 col-lg-4 mb-4">
+        <div class="copy d-flex flex-column align-items-center align-items-lg-start">
+          <span class="text-white">&copy; 2025</span>
+          <span class="text-white">Linnakello Hämeenlinna</span>
+          <img src="./assets/logo.png" alt="logo" class="mt-2" style="max-width: 100px;">
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <div class="social d-flex flex-column align-items-center align-items-lg-end">
+          <div class="social-links mb-3">
+            <a href="#" class="me-3"><img src="./assets/x.png" alt="twitter" class="social-icon"></a>
+            <a href="#" class="me-3"><img src="./assets/facebook.png" alt="facebook" class="social-icon"></a>
+            <a href="#"><img src="./assets/instagram.png" alt="instagram" class="social-icon"></a>
+          </div>
+          <div class="trademark">
+            <img src="./assets/Suomalainenkauppa.png" alt="trademark" class="img-fluid">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
