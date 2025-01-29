@@ -7,6 +7,9 @@ body {
   height: 100vh;
   background: #000;
 }
+.container {
+  padding-right: calc(100vh - 100%);
+}
 
 .bg-dark-gray {
   background-color: #141415;
@@ -299,6 +302,11 @@ body {
     text-align: center;
     margin: 5px 0;
   }
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
 }
 
 @media (min-width: 640px) {
@@ -326,6 +334,11 @@ body {
   #language-switch {
     width: 60px;
   }
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
 
 }
 
@@ -334,22 +347,13 @@ body {
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .contact {
-    grid-template-columns: 1fr 1fr;
-  }
+
 }
 
 
 /* Yhteydenottolomake */
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
 
 .contact-info, .contact-section {
-  flex: 1;
-  max-width: 600px;
   background-color: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
@@ -420,4 +424,22 @@ body {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+.palvelut-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+}
+.palvelut-images div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+}
+.palvelut-images img, .palvelut-images div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.palvelut-description {
+  font-size: 19px;
 }
