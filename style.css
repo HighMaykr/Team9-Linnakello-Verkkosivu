@@ -180,18 +180,6 @@ body {
   cursor: pointer;
 }
 
-/* Osio 1 */
-.section-photo {
-    background: url('./assets/tayttokuva-5.jpg') no-repeat center center;
-    background-size: cover;
-    height: 700px;
-    width: 100%;
-  }
-  
-  .section-photo .d-flex {
-    height: 100%;
-  }
-  
 /* Osio 2 */
 #osio-2 {
   padding-left: 0;
@@ -206,7 +194,7 @@ body {
     height: auto;
     display: block;
   }
-  
+
   .carousel-item .col-3 {
     padding: 0 5px;
   }
