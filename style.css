@@ -338,3 +338,86 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+
+/* Yhteydenottolomake */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-info, .contact-section {
+  flex: 1;
+  max-width: 600px;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.contact-info h2, .contact-section h2 {
+  color: white;
+}
+
+.contact-section {
+  margin-top: 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background-color: #2a2a2a;
+  border: 1px solid #555;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form button {
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #ddd;
+}
+
+
+/* Index osio4 */
+.text-box-grid {
+  width: 100%;
+  height: 100%;
+  background-color: #141415;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
