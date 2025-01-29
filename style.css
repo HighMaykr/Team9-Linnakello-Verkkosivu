@@ -7,6 +7,9 @@ body {
   height: 100vh;
   background: #000;
 }
+.container {
+  padding-right: calc(100vh - 100%);
+}
 
 .bg-dark-gray {
   background-color: #141415;
