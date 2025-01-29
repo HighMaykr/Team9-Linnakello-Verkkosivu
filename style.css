@@ -292,6 +292,7 @@ body {
   .products-list {
     grid-template-columns: 1fr;
   }
+
 }
 
 @media (min-width: 768px) {
