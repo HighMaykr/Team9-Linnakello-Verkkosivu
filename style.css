@@ -299,6 +299,11 @@ body {
     text-align: center;
     margin: 5px 0;
   }
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
 }
 
 @media (min-width: 640px) {
@@ -326,6 +331,11 @@ body {
   #language-switch {
     width: 60px;
   }
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
 
 }
 
@@ -334,22 +344,13 @@ body {
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .contact {
-    grid-template-columns: 1fr 1fr;
-  }
+
 }
 
 
 /* Yhteydenottolomake */
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
 
 .contact-info, .contact-section {
-  flex: 1;
-  max-width: 600px;
   background-color: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
