@@ -51,48 +51,48 @@
 
     <!-- Sivun pääsisältö -->
     <section class="bg-black pb-5">
-      <div class="container">
+      <div id="etusivu" class="container">
 
       <!-- Osio 1 -->
-      <div class="container-fluid section-photo">
+      <div id="osio-1" class="container-fluid section-photo">
         <div class="d-flex align-items-center justify-content-center h-100">
         </div>
       </div>
 
       <!-- Osio 2 -->
-      <div class="container-fluid py-5">
-        <div id="carouselExample" class="carousel slide">
+      <div id="osio-2" class="container-fluid py-5">
+        <div id="carouselSlider" class="carousel slide">
           <div class="carousel-inner">
 
       <!-- Osio 2:n, Slide 1 -->
       <div class="carousel-item active">
-        <div class="row">
+        <div class="row align-items-center">
 
           <!-- Kuva 1 -->
           <div class="col-3">
             <a href="kauppa.html">
-              <img src="./assets/facebook.png" class="d-block w-100" alt="Item 1">
+              <img src="./assets/tayttokuva-24.webp" class="d-block w-100" alt="Item 1">
             </a>
           </div>
 
           <!-- Kuva 2 -->
           <div class="col-3">
             <a href="kauppa.html">
-              <img src="./assets/facebook.png" class="d-block w-100" alt="Item 2">
+              <img src="./assets/tayttokuva-21.webp" class="d-block w-100" alt="Item 2">
             </a>
           </div>
 
           <!-- Kuva 3 -->
           <div class="col-3">
             <a href="kauppa.html">
-              <img src="./assets/facebook.png" class="d-block w-100" alt="Item 3">
+              <img src="./assets/tayttokuva-25.webp" class="d-block w-100" alt="Item 3">
             </a>
           </div>
 
           <!-- Kuva 4 -->
           <div class="col-3">
             <a href="kauppa.html">
-              <img src="./assets/facebook.png" class="d-block w-100" alt="Item 4">
+              <img src="./assets/tayttokuva-27.jpg" class="d-block w-100" alt="Item 4">
             </a>
           </div>
         </div>
@@ -100,32 +100,32 @@
 
       <!-- Slide 2 -->
       <div class="carousel-item">
-        <div class="row">
+        <div class="row align-items-center">
 
           <!-- Kuva 5 -->
           <div class="col-3">
             <a href="kauppa.html">
-              <img src="./assets/instagram.png" class="d-block w-100" alt="Item 5">
+              <img src="./assets/tayttokuva-29.avif" class="d-block w-100" alt="Item 5">
             </a>
           </div>
 
           <!-- Kuva 6 -->
           <div class="col-3">
             <a href="kauppa.html">
-              <img src="./assets/instagram.png" class="d-block w-100" alt="Item 6">
+              <img src="./assets/tayttokuva-30.webp" class="d-block w-100" alt="Item 6">
             </a>
           </div>
 
           <!-- Kuva 7 -->
           <div class="col-3">
             <a href="kauppa.html">
-              <img src="./assets/x.png" class="d-block w-100" alt="Item 7">
+              <img src="./assets/tuote2.png" class="d-block w-100" alt="Item 7">
             </a>
           </div>
           <!-- Kuva 8 -->
           <div class="col-3">
             <a href="kauppa.html">
-              <img src="./assets/x.png" class="d-block w-100" alt="Item 8">
+              <img src="./assets/tuote8.png" class="d-block w-100" alt="Item 8">
             </a>
           </div>
         </div>
@@ -134,29 +134,31 @@
     </div>
 
       <!-- Ohjain -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlider" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselSlider" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
   </div>
 
-
       <!-- Osio 3 -->
-      <div class="container-fluid py-5">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img src="./assets/tayttokuva-4.jpg" class="d-block w-100" alt="Photo">
-          </div>
-          <div class="col-md-6 text-background">
-            <h2>Title of the Section</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Sed sit amet fermentum sapien, at ullamcorper mi. 
-              Vivamus bibendum ipsum et dolor condimentum, vel vulputate enim iaculis.</p>
+      <div id="osio-3" class="container-fluid pb-5">
+        <div class="row">
+            <img src="./assets/tayttokuva-15.jpg" class="img-fluid p-0" alt="Photo" style="max-width: 400px;">
+          <div class="col-md-6 text-background d-flex flex-column justify-content-center">
+            <h2>Linnakello Hämeenlinna</h2>
+            <p>Linnakello Hämeenlinnasta löydät 
+              huolella valitut kotimaiset ja kansainväliset kellomerkit sekä laadukkaat korut jokaiseen elämäntilanteeseen. 
+              Etsitpä täydellistä lahjaa tai ajannäyttäjää itsellesi, meiltä löydät laadukkaat vaihtoehdot häihin, 
+              merkkipäiviin ja muihin tärkeisiin hetkiin. 
+              Linnakello Hämeenlinna on perinteikäs kello- ja kultasepänliike, 
+              jossa laatu ja ammattitaito ovat kulkeneet käsi kädessä jo 70 vuoden ajan.</p>
+              <p>Tarjoamme myös kellohuolto- ja korjauspalveluita. 
+                Tule tutustumaan liikkeeseemme Hämeenlinnan sydämessä, autamme sinua valitsemaan ajan arvoisia tuotteita.</p>
           </div>
         </div>
       </div>
@@ -169,6 +171,7 @@
     </div>
   </section>
 
+      <!-- alatunniste -->
       <footer class="bg-dark-gray py-5">
         <div class="container">
           <div class="row">

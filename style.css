@@ -180,7 +180,7 @@ body {
   cursor: pointer;
 }
 
-/* Index Osiot 1 ja 2 */
+/* Osio 1 */
 .section-photo {
     background: url('./assets/tayttokuva-5.jpg') no-repeat center center;
     background-size: cover;
@@ -192,16 +192,19 @@ body {
     height: 100%;
   }
   
-  .section-photo h1 {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
+/* Osio 2 */
+#osio-2 {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 .carousel-inner img {
     object-fit: cover;
-    width: 100%;
+    max-width: 320px;
+    max-height: 320px;
+    width: auto;
     height: auto;
+    display: block;
   }
   
   .carousel-item .col-3 {
@@ -217,30 +220,36 @@ body {
     width: 5%;
   }
 
-  /* Osio 3 */
-.container-fluid img {
-    max-height: 400px;
-    object-fit: cover;
-  }
-  
-  .container-fluid .col-md-6 {
-    padding: 20px;
-  }
+/* Osio 3 */
+#osio-3 .text-background {
+  background-color: #141415;
+  color: #ffffff;
+  padding-left: 20px;
+  flex-grow: 1;
+}
 
-  .text-background {
-    background-color: #141415;
-    color: #ffffff;
-  }
-  
-  .container-fluid h2 {
-    font-size: 2rem;
-  }
-  
-  .container-fluid p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+#osio-3 .row {
+  background-color: #141415;
+  padding-left: 0;
+}
 
+#osio-3 h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#osio-3 p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#osio-3 img {
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+/*  */
 
 .custom-toggler {
   border: none;
