@@ -54,8 +54,9 @@
   <div class="container">
     <!--    PAGE CONTENT HERE-->
     <h1 class="text-white mt-4">Yhteystiedot</h1>
-    <div class="contact">
-      <div class="contact-info bg-dark-gray px-5 py-5 mt-3">
+    <div class="contact-container">
+      <!-- Yhteystietolaatikko -->
+      <div class="contact-info">
         <h2 class="text-white">Yritys</h2>
         <span>
           Yrityksen nimi: Linnakello Hämeenlinna<br>
@@ -78,10 +79,35 @@
           Maa: Suomi
         </span>
       </div>
-      <img class="contact-logo" src="./assets/logo.png" alt="logo">
+
+      <!-- yhteydenottolomake -->
+      <section class="contact-section">
+        <h2>Ota yhteyttä</h2>
+        <form action="send_message.php" method="post" class="contact-form">
+          <div class="form-group">
+            <label for="name">Nimi</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Sähköposti</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Puhelinnumero</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9+ ]*" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Viesti</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Lähetä</button>
+        </form>
+      </section>
     </div>
   </div>
 </section>
+
+  
 
 <footer class="bg-dark-gray py-5">
   <div class="container">
