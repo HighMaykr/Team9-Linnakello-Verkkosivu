@@ -144,7 +144,7 @@ body {
 }
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   column-gap: 150px;
   color: white;
 }
@@ -306,6 +306,8 @@ body {
   .products-list {
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
+  }
+  .contact {
+    grid-template-columns: 1fr 1fr;
   }
 }
