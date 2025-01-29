@@ -440,3 +440,14 @@ body {
 .palvelut-description {
   font-size: 19px;
 }
+
+@media (hover: hover) and (pointer: fine) {
+  /* WebKit */
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+  }
+}
