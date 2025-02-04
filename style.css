@@ -439,3 +439,32 @@ body {
     scrollbar-width: none;
   }
 }
+.henkilokunta {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.henkilokunta-description {
+  font-size: 19px;
+}
+.henkilokunta-item {
+  position: relative;
+  width: 30%;
+}
+
+.henkilokunta-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.henkilokunta-text {
+  position: absolute;
+  font-size: 14px;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
