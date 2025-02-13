@@ -1,56 +1,7 @@
-<!doctype html>
-<html lang="fi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
-  <title>Kauppa - Linnakello Hämeenlinna</title>
-</head>
-<body>
-
-<header class="bg-dark-gray">
-  <nav class="navbar navbar-expand-lg py-3">
-    <div class="container">
-      <a href="index.php" class="navbar-brand d-flex align-items-center link-body-emphasis text-decoration-none">
-        <img class="logo" src="./assets/logo.png" alt="logo">
-        <div class="logo-text">
-          <span class="fs-4 text-white">Linnakello</span>
-          <span class="fs-6 text-white">Hämeenlinna</span>
-        </div>
-      </a>
-
-      <button class="navbar-toggler custom-toggler" type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#mainNav"
-              aria-controls="mainNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-        <span class="hamburger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a href="index.php" class="nav-link text-white">Etusivu</a></li>
-          <li class="nav-item"><a href="./meista.html" class="nav-link text-white">Tietoa meistä</a></li>
-          <li class="nav-item"><a href="./kauppa.html" class="nav-link text-white nav-active" aria-current="page">Kauppa</a></li>
-          <li class="nav-item"><a href="./yhteystiedot.html" class="nav-link text-white">Yhteystiedot</a></li>
-          <li class="nav-item"><a href="palvelut.php" class="nav-link text-white">Palvelut</a></li>
-          <li class="nav-item"><a href="./henkilokunta.html" class="nav-link text-white">Henkilökunta</a></li>
-          <li class="nav-item"><a href="./kauppa.html" class="nav-link text-white"><img src="./assets/shoppingbasket.png" width="20" height="20" alt="ostoskori"></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
-
+<?php
+$page = "kauppa";
+include "header.php";
+?>
 <section class="bg-black pb-5">
   <div class="container">
     <!--    PAGE CONTENT HERE-->
@@ -153,44 +104,4 @@
     </div>
   </div>
 </section>
-
-<footer class="bg-dark-gray py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4 mb-4">
-        <div class="links d-flex flex-column align-items-center align-items-lg-start">
-          <span><a href="#" class="text-white text-decoration-none">Usein kysytyt kysymykset</a></span>
-          <span><a href="#" class="text-white text-decoration-none">Vaihto ja palautus</a></span>
-          <span><a href="#" class="text-white text-decoration-none">Takuu ja huolto</a></span>
-          <span><a href="#" class="text-white text-decoration-none">Myymälämme</a></span>
-          <span><a href="#" class="text-white text-decoration-none">Maksutavat</a></span>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-4 mb-4">
-        <div class="copy d-flex flex-column align-items-center">
-          <span class="text-white">&copy; 2025</span>
-          <span class="text-white">Linnakello Hämeenlinna</span>
-          <img src="./assets/logo.png" alt="logo" class="mt-2" style="max-width: 100px;">
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-4">
-        <div class="social d-flex flex-column align-items-center align-items-lg-end">
-          <div class="social-links mb-3">
-            <a href="#" class="me-3"><img src="./assets/x.png" alt="twitter" class="social-icon"></a>
-            <a href="#" class="me-3"><img src="./assets/facebook.png" alt="facebook" class="social-icon"></a>
-            <a href="#"><img src="./assets/instagram.png" alt="instagram" class="social-icon"></a>
-          </div>
-          <div class="trademark">
-            <img src="./assets/Suomalainenkauppa.png" alt="trademark" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+<?php require "footer.php";?>
