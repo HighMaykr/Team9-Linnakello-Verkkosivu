@@ -48,7 +48,40 @@ $page = isset($page) ? $page : 'home';
                     <li class="nav-item"><a href="henkilokunta.php" class="nav-link text-white <?php echo ($page === 'henkilokunta') ? 'nav-active' : ''; ?>" <?php if ($page === 'home') echo 'aria-current="page"'; ?>>Henkilökunta</a></li>
                     <li class="nav-item"><a href="kauppa.php" class="nav-link text-white"><img src="./assets/shoppingbasket.png" width="20" height="20" alt="ostoskori"></a></li>
                 </ul>
+                <div class="auth">
+                    <span id="login" onclick="document.getElementById('modal').showModal()">Kirjaudu</span>
+                </div>
             </div>
+
         </div>
     </nav>
+    <dialog id="modal">
+        <div class="close-btn" onclick="document.getElementById('modal').close()">×</div>
+        <form id="loginForm" class="form-container active" method="post">
+            <div class="modal-header">Kirjaudu</div>
+            <div class="modal-body">
+                <input type="email" name="loginEmail" placeholder="Email" required>
+                <input type="password" name="loginPassword" placeholder="Salasana" required>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary" type="submit">Kirjaudu</button>
+            </div>
+            <div class="switch-form" onclick="document.getElementById('loginForm').classList.remove('active'); document.getElementById('registerForm').classList.add('active')">Ei tiliä? Rekisteröidy</div>
+        </form>
+
+        <form id="registerForm" class="form-container" method="post">
+            <div class="modal-header">Rekisteröidy</div>
+            <div class="modal-body">
+                <input type="text" name="firstName" placeholder="Etunimi" required>
+                <input type="text" name="lastName" placeholder="Sukunimi" required>
+                <input type="email" name="registerEmail" placeholder="Email" required>
+                <input type="password" name="registerPassword" placeholder="Salasana" required>
+                <input type="password" name="registerPassword2" placeholder="Salasana 2" required>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary" type="submit">Rekisteröi</button>
+            </div>
+            <div class="switch-form" onclick="document.getElementById('registerForm').classList.remove('active'); document.getElementById('loginForm').classList.add('active')">On tilini? Kirjaudu</div>
+        </form>
+    </dialog>
 </header>
